@@ -1,1 +1,1 @@
-# meetsync
+# MeetSync
