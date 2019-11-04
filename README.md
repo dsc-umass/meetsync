@@ -1,7 +1,7 @@
 # MeetSync
 
 ## Development
-To run the project, you need node.js installed, which you can get [here](https://nodejs.org/en/).
+To run the project, you need node.js and NPM installed, which you can get [here](https://nodejs.org/en/).
 
 To get started:
 ```
