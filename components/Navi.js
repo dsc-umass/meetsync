@@ -17,7 +17,7 @@ const Navi = props => {
 
 	return (
 		<div>
-			<Navbar color="dark" dark expand="md">
+			<Navbar color="dark-secondary" dark expand="md">
 				<NavbarBrand href="/">MeetSync</NavbarBrand>
 				<NavbarToggler onClick={toggle} />
 				<Collapse isOpen={isOpen} navbar>

@@ -18,6 +18,7 @@ $theme-colors: (
   danger: $red,
   light: $gray-100,
   dark: $gray-800,
+  dark-secondary: #282828
 ) !default;
 
 // Options
@@ -52,7 +53,7 @@ $container-max-widths: (
 //
 // Settings for the `<body>` element.
 
-$body-bg: $white !default;
+$body-bg: #191919 !default;
 $body-color: $gray-700 !default;
 $inverse-bg: $gray-900 !default;
 $inverse-color: $gray-600 !default;
@@ -75,6 +76,10 @@ body {
   width: 100%;
 }
 
+h1 {
+  color: white;
+}
+
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -84,6 +89,7 @@ p {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 20px;
+  color: white;
 }
 
 img {
@@ -93,25 +99,4 @@ img {
 
 img:hover {
   animation: pulse 0.5s;
-}
-
-a {
-  color: $sapphire;
-}
-
-.blue-hover:hover {
-  background-color: $sapphire !important;
-}
-
-.click {
-  cursor: pointer;
-}
-
-.no-animation:hover {
-  animation: none;
-}
-
-.profile-icon {
-  width: 90%;
-  max-width: 70px;
 }
