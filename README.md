@@ -1,7 +1,7 @@
 # MeetSync
 
 ## About
-MeetSync is an application to help individuals, teams and organizaiton to sync themsleves based on people's avialablities and make meeting and coordinating super easy. MeetSync hopes to provide a robust system to make meeting times easy with reminds to fill out the meetsync, calendar integrations and fast and responsive UI. 
+MeetSync is an application to help individuals, teams and organizaitons to sync themsleves based on people's avialablities and make meeting and coordinating super easy. MeetSync hopes to provide a robust system to make meeting times easy with reminders to fill out the meetsync, calendar integrations and fast and responsive UI. 
 
 ## Development
 To run the project, you need node.js and NPM installed, which you can get [here](https://nodejs.org/en/).
