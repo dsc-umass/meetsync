@@ -1,0 +1,17 @@
+{
+    "name": "meetsync",
+    "version": "1.0.0",
+    "description": "MeetSync Application on Firebase",
+    "repository": "https://github.com/dsc-umass/meetsync.git",
+    "scripts": {
+      "install": "npm run build-all",
+      "next": "npm run build-firebase && cd \"src/app\" && npm install",
+      "preserve": "npm run build-all",
+      "serve": "firebase serve",
+      "predeploy": "npm run build-all",
+      "deploy": "firebase deploy",
+      "build-all": "npm run build-next && npm run build-firebase",
+      "build-next": "cd \"src/app\" && npm install && npm build",
+      "build-firebase": "cd \"src/functions\" && npm install"
+    }
+  }
