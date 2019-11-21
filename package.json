@@ -9,7 +9,7 @@
       "preserve": "npm run build-all",
       "serve": "firebase serve",
       "predeploy": "npm run build-all",
-      "deploy": "firebase deploy",
+      "deploy": "NODE_ENV=production firebase deploy",
       "build-all": "npm run build-next && npm run build-firebase",
       "build-next": "cd \"src/app\" && npm install && npm build",
       "build-firebase": "cd \"src/functions\" && npm install"

@@ -3,9 +3,12 @@
 const functions = require('firebase-functions');
 const next = require('next');
 
-const dev = process.env.NODE_ENV !== 'production';
+// const dev = process.env.NODE_ENV !== 'production';
 
-const app = next({dev, conf: {distDir: 'next'}});
+const app = next({
+  dev: false, 
+  conf: {distDir: 'next'}
+});
 
 // var app = next({
 //     dev: false,
