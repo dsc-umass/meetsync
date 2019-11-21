@@ -7,7 +7,7 @@ const dev = process.env.NODE_ENV !== 'production';
 
 // const app = next({dev, conf: {distDir: 'next'}});
 
-const app = next({dir:'./src/app', dev});
+const app = next({dir:'./src', dev});
 
 // var app = next({
 //     dev: false,
