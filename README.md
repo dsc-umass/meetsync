@@ -19,7 +19,7 @@ npm run dev
 ```
 
 Then open
-`http://localhost:3000`
+`http://localhost
 to get the localhost development server.
 
 ## Code Structure
