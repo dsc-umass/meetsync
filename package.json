@@ -1,7 +1,7 @@
 {
   "name": "meetsync",
   "version": "1.0.0",
-  "description": "",
+  "description": "A place for people to meet and sync",
   "main": "index.js",
   "scripts": {
     "dev": "next -p 80",
