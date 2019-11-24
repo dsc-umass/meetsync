@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
+    "dev": "next -p 80",
     "build": "next build",
-    "start": "next start"
+    "start": "next start -p 80"
   },
   "repository": {
     "type": "git",
@@ -14,7 +14,7 @@
   },
   "keywords": [],
   "author": "dsc-umass",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/dsc-umass/meetsync/issues"
   },
