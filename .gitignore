@@ -1,5 +1,2 @@
-src/app/node_modules
-src/app/.next
-src/functions/node_modules
-src/functions/next
-
+node_modules
+.next
