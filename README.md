@@ -1,4 +1,6 @@
 # MeetSync
+[![Build Status](https://travis-ci.org/dsc-umass/meetsync.svg?branch=master)](https://travis-ci.org/dsc-umass/meetsync)
+[![License](http://img.shields.io/badge/License-MIT-brightgreen.svg)](./LICENSE)
 
 ## About
 MeetSync is an application to help individuals, teams and organizaitons to sync themsleves based on people's availablities and make meeting and coordinating super easy. MeetSync hopes to provide a robust system to make meeting times easy with reminders to fill out the meetsync, calendar integrations and fast and responsive UI. 
