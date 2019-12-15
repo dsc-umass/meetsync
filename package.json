@@ -4,6 +4,7 @@
   "description": "A place for people to meet and sync",
   "main": "index.js",
   "scripts": {
+    "test": "",
     "dev": "next -p 80",
     "build": "next build",
     "start": "next start -p 80"
