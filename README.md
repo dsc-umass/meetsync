@@ -11,7 +11,9 @@ To run the project, you need node.js and NPM installed, which you can get [here]
 To get started:
 ```
 git clone https://github.com/dsc-umass/meetsync.git
+
 cd meetsync
+
 npm install
 ```
 
