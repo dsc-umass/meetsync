@@ -9,11 +9,10 @@ MeetSync is an application to help individuals, teams and organizaitons to sync 
 To run the project, you need node.js and NPM installed, which you can get [here](https://nodejs.org/en/).
 
 To get started:
-```
-git clone https://github.com/dsc-umass/meetsync.git
-```
 
 ```
+git clone https://github.com/dsc-umass/meetsync.git
+
 cd meetsync
 
 npm install
