@@ -15,14 +15,9 @@ git clone https://github.com/dsc-umass/meetsync.git
 
 ```
 cd meetsync
-```
 
-```
 npm install
-```
 
-From here, you can run
-```
 npm run dev
 ```
 
