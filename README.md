@@ -1,5 +1,5 @@
 # MeetSync
-<!-- [![Build Status](https://travis-ci.org/dsc-umass/meetsync.svg?branch=master)](https://travis-ci.org/dsc-umass/meetsync) -->
+![Node.js CI](https://github.com/dsc-umass/meetsync/workflows/Node.js%20CI/badge.svg)
 [![License](http://img.shields.io/badge/License-MIT-brightgreen.svg)](./LICENSE)
 
 ## About
