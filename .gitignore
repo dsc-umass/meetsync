@@ -1,2 +1,4 @@
 node_modules
 .next
+firebase-admin-key.json
+functions/node_modules
