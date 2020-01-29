@@ -1,6 +1,6 @@
 # MeetSync
 ![Node CI](https://github.com/dsc-umass/meetsync/workflows/Node.js%20CI/badge.svg)
-[![License](http://img.shields.io/badge/License-MIT-brightgreen.svg)](./LICENSE)
+[![License](https://img.shields.io/badge/License-Apache%202.0-brightgreen.svg)](./LICENSE)
 
 ## About
 MeetSync is an application to help individuals, teams and organizaitons to sync themsleves based on people's availablities and make meeting and coordinating super easy. MeetSync hopes to provide a robust system to make meeting times easy with reminders to fill out the meetsync, calendar integrations and fast and responsive UI. 
