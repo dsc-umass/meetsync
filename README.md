@@ -1,5 +1,5 @@
 # MeetSync
-[![Build Status](https://travis-ci.org/dsc-umass/meetsync.svg?branch=master)](https://travis-ci.org/dsc-umass/meetsync)
+<!-- [![Build Status](https://travis-ci.org/dsc-umass/meetsync.svg?branch=master)](https://travis-ci.org/dsc-umass/meetsync) -->
 [![License](http://img.shields.io/badge/License-MIT-brightgreen.svg)](./LICENSE)
 
 ## About
