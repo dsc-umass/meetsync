@@ -40,6 +40,11 @@ const Navi = props => {
 								GitHub
 							</NavLink>
 						</NavItem>
+						<NavItem>
+							<Link href="/login">
+								<NavLink className="click">Login</NavLink>
+							</Link>
+						</NavItem>
 					</Nav>
 				</Collapse>
 			</Navbar>
