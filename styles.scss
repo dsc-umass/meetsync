@@ -100,3 +100,9 @@ img {
 img:hover {
   animation: pulse 0.5s;
 }
+
+.red-star:after {
+  padding-left: 5px;
+  color: #cb2431;
+  content: "*";
+}

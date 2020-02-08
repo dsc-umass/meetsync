@@ -20,7 +20,7 @@ const withAuth = (Component) => {
                     console.log("SIGNED IN")
                 } else {
                     alert("Login Fail");
-                    router.push('/');
+                    router.push('/login');
                 }
             });
         }
