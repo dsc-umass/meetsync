@@ -4,6 +4,7 @@ import Link from "next/link";
 import { auth, firebase } from '../components/Firebase/firebase'
 import './login.css'
 import GoogleButton from 'react-google-button'
+import router from 'next/router';
 
 export default class LoginPage extends React.Component {
     constructor(props) {
@@ -56,6 +57,7 @@ export default class LoginPage extends React.Component {
         auth.signInWithPopup(provider)
             .then(() => {
                 alert('You are signed In');
+                router.push('/dashboard');
             })
             .catch(err => {
                 alert('OOps something went wrong check your console');
@@ -109,7 +111,7 @@ export default class LoginPage extends React.Component {
                     </div>
                     <div className="row">
                         <div className="mycard col-md-6 col-md-offset-0">
-                            <p>New to MeetSync? <Link href="/create">Create an account</Link></p>
+                            <p>New to MeetSync? <Link href="/signup"><a>Create an account</a></Link></p>
                         </div>
                         <Link href="/dashboard">
                             <a className="card">
