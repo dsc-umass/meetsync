@@ -2,10 +2,9 @@
 ![Node CI](https://github.com/dsc-umass/meetsync/workflows/Node.js%20CI/badge.svg)
 [![License](https://img.shields.io/badge/License-Apache%202.0-brightgreen.svg)](./LICENSE)
 
-<div>
-
+<div><p align="center">
 <center><h5>Project is supported by:</h5><img width="360" src="assets/dsc_drew.jpg">
-<img width="360" src="assets/dsc_umass.jpg"></center></div>
+<img width="360" src="assets/dsc_umass.jpg"></center></p></div>
 
 ## About
 MeetSync is an application to help individuals, teams and organizaitons to sync themsleves based on people's availablities and make meeting and coordinating super easy. MeetSync hopes to provide a robust system to make meeting times easy with reminders to fill out the meetsync, calendar integrations and fast and responsive UI. 
