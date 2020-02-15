@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-brightgreen.svg)](./LICENSE)
 
 <div><p align="center">
-<center><h5>Project is supported by:</h5><img width="360" src="assets/dsc_drew.jpg">
+<center><h4>Meetsync is supported by:</h4><img width="360" src="assets/dsc_drew.jpg">
 <img width="360" src="assets/dsc_umass.jpg"></center></p></div>
 
 ## About
