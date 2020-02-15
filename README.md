@@ -3,8 +3,8 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-brightgreen.svg)](./LICENSE)
 
 <div><p align="center">
-<center><h4>Meetsync is supported by:</h4><a href="https://www.facebook.com/dscdrewu/"><img width="360" src="assets/dsc_drew.jpg"></a>
-<a href="https://umassdsc.com/"><img width="360" src="assets/dsc_umass.jpg"></a></center></p></div>
+<center><h4>Meetsync is supported by:</h4><a href="https://www.facebook.com/dscdrewu/"><img width="360" src="assets/dsc_drew.jpg" target="_blank"></a>
+<a href="https://umassdsc.com/" target="_blank"><img width="360" src="assets/dsc_umass.jpg"></a></center></p></div>
 
 ## About
 MeetSync is an application to help individuals, teams and organizaitons to sync themsleves based on people's availablities and make meeting and coordinating super easy. MeetSync hopes to provide a robust system to make meeting times easy with reminders to fill out the meetsync, calendar integrations and fast and responsive UI. 
