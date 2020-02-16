@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-brightgreen.svg)](./LICENSE)
 
 <div><p align="center">
-<center><h4>Meetsync is supported by:</h4><a href="https://www.facebook.com/dscdrewu/"><img width="200" src="assets/dsc_drew.jpg" target="_blank"></a>
+<center><h4>Meetsync is supported & used by:</h4><a href="https://www.facebook.com/dscdrewu/"><img width="200" src="assets/dsc_drew.jpg" target="_blank"></a>
 <a href="https://umassdsc.com/" target="_blank"><img width="200" src="assets/dsc_umass.jpg"></a>
 <img width="200" src="assets/acm_umass.jpg"></center></p></div>
 
