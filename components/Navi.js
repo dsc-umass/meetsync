@@ -9,6 +9,8 @@ import {
 	NavItem,
 	NavLink
 } from "reactstrap";
+//import { FaBeer } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
 
 const Navi = props => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -16,9 +18,16 @@ const Navi = props => {
 	const toggle = () => setIsOpen(!isOpen);
 
 	return (
-		<div>
+		<div >
 			<Navbar color="dark-secondary" dark expand="md">
+				<div className="col-md-2" ></div>
 				<NavbarBrand href="/">MeetSync</NavbarBrand>
+				<NavLink
+					href="https://github.com/dsc-umass/meetsync"
+					target="_blank"
+				>
+					<FaGithub size={30} color='aliceblue'/>
+				</NavLink>
 				<NavbarToggler onClick={toggle} />
 				<Collapse isOpen={isOpen} navbar>
 					<Nav className="ml-auto" navbar>
@@ -28,21 +37,20 @@ const Navi = props => {
 							</Link>
 						</NavItem>
 						<NavItem>
-							<Link href="/about">
-								<NavLink className="click">About</NavLink>
+							<Link href="/login">
+								<NavLink className="click">Login</NavLink>
 							</Link>
 						</NavItem>
 						<NavItem>
-							<NavLink
-								href="https://github.com/dsc-umass/meetsync"
-								target="_blank"
-							>
-								GitHub
-							</NavLink>
+							<Link href="/dashboard" >
+								<NavLink className="click">Dashboard</NavLink>
+							</Link>
 						</NavItem>
 					</Nav>
 				</Collapse>
+				<div className="col-md-2 col-md-offset-0" ></div>
 			</Navbar>
+			
 		</div>
 	);
 };

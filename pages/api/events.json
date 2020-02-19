@@ -1,0 +1,110 @@
+[   
+    {
+        "id":"0",
+        "title": "Event Zero",
+        "admin": "Guillermo Rauch",
+        "description": "Club Meeting",
+        "dateFinal": "2014-01-01T23:28:56.782Z",
+        "datePotential": [
+            "2014-01-01T23:28:56.782Z",
+            "2014-01-01T23:28:56.782Z"
+        ],
+        "emailList": [
+            "tim.shee123@gmail.com",
+            "tim.shee123@gmail.com",
+            "tim.shee123@gmail.com"
+        ],
+        "eventStatus": "closed",
+        "potentialTimes": {
+            "userOne": [
+                "2014-01-01T23:28:56.782Z",
+                "2014-01-01T23:28:56.782Z"
+            ],
+            "userTwo": [
+                "2014-01-01T23:28:56.782Z",
+                "2014-01-01T23:28:56.782Z"
+            ]
+        }
+    },
+    {
+        "id":"1",
+        "title": "Event One",
+        "admin": "Guillermo Rauch",
+        "description": "Club Meeting",
+        "dateFinal": "2014-01-01T23:28:56.782Z",
+        "datePotential": [
+            "2014-01-01T23:28:56.782Z",
+            "2014-01-01T23:28:56.782Z"
+        ],
+        "emailList": [
+            "tim.shee123@gmail.com",
+            "tim.shee123@gmail.com",
+            "tim.shee123@gmail.com"
+        ],
+        "eventStatus": "closed",
+        "potentialTimes": {
+            "userOne": [
+                "2014-01-01T23:28:56.782Z",
+                "2014-01-01T23:28:56.782Z"
+            ],
+            "userTwo": [
+                "2014-01-01T23:28:56.782Z",
+                "2014-01-01T23:28:56.782Z"
+            ]
+        }
+    },
+    {
+        "id":"2",
+        "title": "Event Two",
+        "admin": "Guillermo Rauch",
+        "description": "Club Meeting",
+        "dateFinal": "2014-01-01T23:28:56.782Z",
+        "datePotential": [
+            "2014-01-01T23:28:56.782Z",
+            "2014-01-01T23:28:56.782Z"
+        ],
+        "emailList": [
+            "tim.shee123@gmail.com",
+            "tim.shee123@gmail.com",
+            "tim.shee123@gmail.com"
+        ],
+        "eventStatus": "closed",
+        "potentialTimes": {
+            "userOne": [
+                "2014-01-01T23:28:56.782Z",
+                "2014-01-01T23:28:56.782Z"
+            ],
+            "userTwo": [
+                "2014-01-01T23:28:56.782Z",
+                "2014-01-01T23:28:56.782Z"
+            ]
+        }
+    },
+    {
+        "id":"3",
+        "title": "Event Three",
+        "admin": "Guillermo Rauch",
+        "description": "Club Meeting",
+        "dateFinal": "2014-01-01T23:28:56.782Z",
+        "datePotential": [
+            "2014-01-01T23:28:56.782Z",
+            "2014-01-01T23:28:56.782Z"
+        ],
+        "emailList": [
+            "tim.shee123@gmail.com",
+            "tim.shee123@gmail.com",
+            "tim.shee123@gmail.com"
+        ],
+        "eventStatus": "closed",
+        "potentialTimes": {
+            "userOne": [
+                "2014-01-01T23:28:56.782Z",
+                "2014-01-01T23:28:56.782Z"
+            ],
+            "userTwo": [
+                "2014-01-01T23:28:56.782Z",
+                "2014-01-01T23:28:56.782Z"
+            ]
+        }
+    }
+]
