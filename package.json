@@ -32,6 +32,8 @@
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-google-button": "^0.7.0",
-    "reactstrap": "^8.1.1"
+    "react-icons": "^3.9.0",
+    "reactstrap": "^8.1.1",
+    "swr": "^0.1.17"
   }
 }
