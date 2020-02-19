@@ -11,7 +11,6 @@ const config = {
     appId: process.env.appId,
     measurementId: process.env.measurementId
   };
-console.log("API KEY: " + String(config.apiKey));
 if (!firebase.apps.length) {
 firebase.initializeApp(config);
 }

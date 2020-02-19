@@ -45,33 +45,21 @@ export default class LoginPage extends React.Component {
                 console.log(err);
             });
     }
-	handleCreateUser = () => {
-        event.preventDefault();
-		const username = this.state.username;
-		const password = this.state.password;
-        auth.createUserWithEmailAndPassword(username, password);
-	}
 	handleSignIn = () => {
         var provider = new firebase.auth.GoogleAuthProvider();
         provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
         auth.signInWithPopup(provider)
             .then(() => {
                 alert('You are signed In');
+                //Go To Dashboard
                 router.push('/dashboard');
             })
             .catch(err => {
                 alert('OOps something went wrong check your console');
                 console.log(err);
             });
+        
     }
-    handleLogout = () => {
-        auth.signOut().then(function () {
-            alert('Logout successful');
-        }).catch(function (error) {
-            alert('OOps something went wrong check your console');
-            console.log(err);
-        });
-	}
     render() {
         const { username, password, submitted, loading, error } = this.state;
         return (
@@ -113,14 +101,8 @@ export default class LoginPage extends React.Component {
                         <div className="mycard col-md-6 col-md-offset-0">
                             <p>New to MeetSync? <Link href="/signup"><a>Create an account</a></Link></p>
                         </div>
-                        <Link href="/dashboard">
-                            <a className="card">
-                                <h3>Go to Dashboard&rarr;</h3>
-                                <p>Visit Dashboard</p>
-                            </a>
-                        </Link>
-                        <button onClick={this.handleLogout}>Logout</button>
                     </div>
+                    
                 </section>
             </Layout>
             
