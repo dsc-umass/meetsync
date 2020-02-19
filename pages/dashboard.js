@@ -12,32 +12,12 @@ import Link from 'next/link';
 import { Button } from 'reactstrap';
 
 import { MDBIcon } from 'mdbreact';
-//<i class="fas fa-trash-alt"></i>
-//<MDBIcon icon="trash-alt" />
 
-const Example = ({ type, color }) => (
+const LoadingComponent = ({ type, color }) => (
   <ReactLoading type={type} color={color} height={667} width={375} />
 );
 
-//import EventForm from '../components/EventForm'
-//import EventList from '../components/EventList'
-
-const Todo = ({todo, remove}) => {
-  // Each Todo
-  return (<li>{todo.text}</li>);
-}
-
-const TodoList = ({todos, remove}) => {
-  // Map through the todos
-  const todoNode = todos.map((todo) => {
-    return (<Todo todo={todo} key={todo.id} remove={remove}/>)
-  });
-  return (<ul>{todoNode}</ul>);
-}
-
 const Event = ({event, remove}) => {
-  console.log(event)
-  console.log(event.id)
   return (
     <li>
       <div className="row">
@@ -48,7 +28,7 @@ const Event = ({event, remove}) => {
         </div>
         <div>
           <Button onClick={remove}>
-            <MDBIcon icon="trash-alt" />
+            <MDBIcon icon="trash" />
           </Button>
         </div>
       </div>
@@ -120,7 +100,7 @@ class Dashboard extends React.Component{
               justifyContent: "center",
               alignItems: "center"
             }}>
-              <Example type={"balls"} color={"#ffffff"} />
+              <LoadingComponent type={"balls"} color={"#ffffff"}/>
           </div>
         </section>
       </Layout>
@@ -133,7 +113,6 @@ class Dashboard extends React.Component{
             <EventsList eventsObj={this.state.shows} remove={this.handleRemove.bind(this)}/>
             <button onClick={this.handleLogout}>Logout</button>
           </div>
-          <MDBIcon icon="trash-alt" />
         </section>
         
       </Layout>
