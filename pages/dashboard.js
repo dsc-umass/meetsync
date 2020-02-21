@@ -10,7 +10,7 @@ import axios from 'axios';
 import ReactLoading from 'react-loading';
 import Link from 'next/link';
 import { Button } from 'reactstrap';
-
+//import { FasFaBan } from 'react-icons';
 import { MDBIcon } from 'mdbreact';
 
 const LoadingComponent = ({ type, color }) => (
@@ -20,18 +20,14 @@ const LoadingComponent = ({ type, color }) => (
 const Event = ({event, remove}) => {
   return (
     <li>
-      <div className="row">
-        <div className="col">
+        <div className="form-inline">
           <Link href="/p/[id]" as={`/p/${event.id}`}>
             <a style={{fontSize: 20}}>{event.title}</a>
           </Link>
-        </div>
-        <div>
           <Button onClick={remove}>
             <MDBIcon icon="trash" />
           </Button>
         </div>
-      </div>
     </li>);
 }
 
@@ -87,7 +83,11 @@ class Dashboard extends React.Component{
         alert('OOps something went wrong check your console');
         console.log(err);
     });
-    router.push('/')
+    router.push('/');
+  }
+
+  createNewEvent = () => {
+    router.push('/create_event');
   }
 
   render(){
@@ -110,7 +110,15 @@ class Dashboard extends React.Component{
         <section>
           <div className="container">
             <h1 className="text-center">Dashboard</h1>
-            <EventsList eventsObj={this.state.shows} remove={this.handleRemove.bind(this)}/>
+            <div className="row">
+              <div className="col">
+                <EventsList eventsObj={this.state.shows} remove={this.handleRemove.bind(this)}/>
+              </div>
+              <div className="col">
+                <Button color="primary" onClick={this.createNewEvent}>Create New Event</Button>{' '}
+              </div>
+              
+            </div>
             <button onClick={this.handleLogout}>Logout</button>
           </div>
         </section>

@@ -69,6 +69,11 @@ $link-hover-decoration: none !default;
 @import './fonts.scss';
 
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
+//omit extension for CSS fiels
+//new module bundlers such as webpack, you will probably need to use use ~ in the beginning of the path
+    //@import '~@fortawesome/fontawesome-free/css/all.min'; 
+//@import 'bootstrap-css-only/css/bootstrap.min.css'; 
+    //@import '~mdbreact/dist/css/mdb';
 
 html,
 body {
