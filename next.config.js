@@ -2,6 +2,7 @@
 
 const webpack = require("webpack");
 // Initialize doteenv library
+console.log("NODE_ENV: " + process.env.NODE_ENV);
 switch(process.env.NODE_ENV) {
   case 'development':
     require('dotenv').config({
