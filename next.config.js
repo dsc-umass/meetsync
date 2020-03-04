@@ -1,6 +1,8 @@
 /* next.config.js */
 
-const webpack = require("webpack");
+const GitRevisionPlugin = require('git-revision-webpack-plugin')
+const gitRevisionPlugin = new GitRevisionPlugin()
+
 // Initialize doteenv library
 console.log("NODE_ENV: " + process.env.NODE_ENV);
 switch(process.env.NODE_ENV) {
@@ -37,5 +39,14 @@ module.exports = withCSS(withSass({
     messagingSenderId: process.env.messagingSenderId,
     appId: process.env.appId,
     measurementId: process.env.measurementId
-	}
+  },
+  webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
+    config.plugins.push(gitRevisionPlugin);
+    config.plugins.push(new webpack.DefinePlugin({
+      'VERSION': JSON.stringify(gitRevisionPlugin.version()),
+      'COMMITHASH': JSON.stringify(gitRevisionPlugin.commithash()),
+      'BRANCH': JSON.stringify(gitRevisionPlugin.branch()),
+    }));
+    return config;
+  }
 }));

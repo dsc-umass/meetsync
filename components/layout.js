@@ -1,4 +1,5 @@
 import Navi from "./Navi";
+import Foot from "./Foot";
 import "../styles.scss";
 
 export default function Layout(props) {
@@ -6,6 +7,7 @@ export default function Layout(props) {
 		<div>
 			<Navi />
 			{props.children}
+			<Foot />
 		</div>
 	);
 }

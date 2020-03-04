@@ -9,7 +9,6 @@ import {
 	NavItem,
 	NavLink
 } from "reactstrap";
-//import { FaBeer } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
 
 const Navi = props => {
@@ -22,29 +21,17 @@ const Navi = props => {
 			<Navbar color="dark-secondary" dark expand="md">
 				<div className="col-md-2" ></div>
 				<NavbarBrand href="/">MeetSync</NavbarBrand>
-				<NavLink
-					href="https://github.com/dsc-umass/meetsync"
-					target="_blank"
-				>
-					<FaGithub size={30} color='aliceblue'/>
-				</NavLink>
 				<NavbarToggler onClick={toggle} />
 				<Collapse isOpen={isOpen} navbar>
 					<Nav className="ml-auto" navbar>
 						<NavItem>
-							<Link href="/">
-								<NavLink className="click">Home</NavLink>
-							</Link>
+							<NavLink href="/">Home</NavLink>
 						</NavItem>
 						<NavItem>
-							<Link href="/login">
-								<NavLink className="click">Login</NavLink>
-							</Link>
+							<NavLink href="/login">Login</NavLink>
 						</NavItem>
 						<NavItem>
-							<Link href="/dashboard" >
-								<NavLink className="click">Dashboard</NavLink>
-							</Link>
+							<NavLink href="/dashboard">Dashboard</NavLink>
 						</NavItem>
 					</Nav>
 				</Collapse>
