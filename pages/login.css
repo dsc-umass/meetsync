@@ -32,14 +32,19 @@
     }
     .mycard {
     padding: 18px 18px 24px;
-    width: 220px;
+    width: 40%;
     text-align: left;
     text-decoration: none;
-    color: #434343;
+    color: #000000;
     border: 1px solid #9b9b9b;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
     }
     .mycard:hover {
     border-color: #067df7;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     }
     .mycard h3 {
     margin: 0;
@@ -49,19 +54,8 @@
     .mycard p {
     margin: 0;
     padding: 12px 0 0;
-    font-size: 13px;
+    font-size: 14px;
     color: #333;
-    }
-  
-    .mycard {
-      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-      transition: 0.3s;
-      width: 40%;
-      border-radius: 5px;
-    }
-    
-    .mycard:hover {
-      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     }
     
     img {
