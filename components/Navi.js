@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Link from "next/link";
 import {
 	Collapse,
 	Navbar,
@@ -9,7 +8,6 @@ import {
 	NavItem,
 	NavLink
 } from "reactstrap";
-import { FaGithub } from 'react-icons/fa';
 
 const Navi = props => {
 	const [isOpen, setIsOpen] = useState(false);
