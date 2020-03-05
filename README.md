@@ -3,9 +3,9 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-brightgreen.svg)](./LICENSE)
 
 <div><p align="center">
-<center><h4>Meetsync is supported & used by:</h4><a href="https://www.facebook.com/dscdrewu/"><img width="300" src="assets/dsc_drew.jpg" target="_blank"></a>
-<a href="https://umassdsc.com/" target="_blank"><img width="300" src="assets/dsc_umass.jpg"></a>
-<!-- <img width="250" src="assets/acm_umass.jpg"> -->
+<center><h4>Meetsync is supported & used by:</h4><a href="https://www.facebook.com/dscdrewu/"><img width="270" src="assets/dsc_drew.jpg" target="_blank"></a>
+<a href="https://umassdsc.com/" target="_blank"><img width="270" src="assets/dsc_umass.jpg"></a>
+<a href="https://umassdsc.com/" target="_blank"><img width="270" src="assets/dsc_rpi.png"></a>
 </center></p></div>
 
 ## About
