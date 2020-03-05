@@ -5,7 +5,7 @@
 <div><p align="center">
 <center><h4>Meetsync is supported & used by:</h4><a href="https://www.facebook.com/dscdrewu/"><img width="270" src="assets/dsc_drew.jpg" target="_blank"></a>
 <a href="https://umassdsc.com/" target="_blank"><img width="270" src="assets/dsc_umass.jpg"></a>
-<a href="https://umassdsc.com/" target="_blank"><img width="270" src="assets/dsc_rpi.png"></a>
+<a href="https://www.dsc-rpi.club/" target="_blank"><img width="270" src="assets/dsc_rpi.png"></a>
 </center></p></div>
 
 ## About
