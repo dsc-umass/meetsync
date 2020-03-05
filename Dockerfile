@@ -1,20 +1,24 @@
 FROM node:12
 
+# Expose the running port
+EXPOSE 8080
+
+# Declare entrypoint / default run command
+# use "dev" rather than start for development build
+ENTRYPOINT [ "/usr/bin/env", "npm", "run" ]
+CMD [ "start" ]
+
 # Start everything in /app
 WORKDIR /app
 
 # Copy our required dependencies
 COPY package*.json ./
 
-# TODO get production / dev images from Build Args
 # RUN npm install
 RUN npm ci --only=production
 
 # Add the rest of our source code
 COPY . .
 
-# Expose the running port
-EXPOSE 8080
-
-# Off to the races
-CMD [ "npm", "run", "start" ] 
+# Build files
+RUN npm run build

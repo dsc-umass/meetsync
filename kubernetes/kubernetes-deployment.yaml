@@ -1,0 +1,80 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: meetsync
+    myval: 'yes'
+    test: '123'
+  name: meetsync
+  namespace: default
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: meetsync
+      myval: 'yes'
+      test: '123'
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: meetsync
+        myval: 'yes'
+        test: '123'
+    spec:
+      containers:
+        - image: gcr.io/meetsync-257318/github.com/dsc-umass/meetsync
+          imagePullPolicy: IfNotPresent
+          name: meetsync-1
+---
+apiVersion: autoscaling/v2beta1
+kind: HorizontalPodAutoscaler
+metadata:
+  labels:
+    app: meetsync
+    myval: 'yes'
+    test: '123'
+  name: meetsync-hpa-pzvb
+  namespace: default
+spec:
+  maxReplicas: 5
+  metrics:
+    - resource:
+        name: cpu
+        targetAverageUtilization: 80
+      type: Resource
+  minReplicas: 1
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: meetsync
+---
+apiVersion: v1
+kind: Service
+metadata:
+  finalizers:
+    - service.kubernetes.io/load-balancer-cleanup
+  labels:
+    app: meetsync
+    myval: 'yes'
+    test: '123'
+  name: meetsync-service
+  namespace: default
+spec:
+  clusterIP: 10.0.11.65
+  externalTrafficPolicy: Cluster
+  ports:
+    - nodePort: 30820
+      port: 80
+      protocol: TCP
+      targetPort: 8080
+  selector:
+    app: meetsync
+    myval: 'yes'
+    test: '123'
+  sessionAffinity: None
+  type: LoadBalancer
