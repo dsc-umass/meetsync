@@ -107,6 +107,7 @@ class Events extends React.Component{
             <CardHeader><h3>Event Listing</h3></CardHeader>
             <CardBody><EventsList eventsObj={this.state.shows} remove={this.handleRemove.bind(this)}/></CardBody>
           </Card>
+          <br />
           <Calendar />
         </Container>
         
