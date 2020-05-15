@@ -38,8 +38,11 @@ export default class Home extends React.Component {
             <h1>ABOUT</h1>
             <hr />
             <p>Project created for school clubs to set up regular meetings for the coming semester</p>
+            <p>enables you to effortlessly schedule club meetings</p>
+            <p>Brought to you by the UMass DSC Developers</p>
+            <img src="/assets/acm_umass.jpg" alt="UMass Image" />
           </Container>
-        </section>
+				</section>
 			</Layout>
 		);
 	}
