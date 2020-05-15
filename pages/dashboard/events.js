@@ -13,7 +13,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons"
 import {
   Button, Card, CardHeader, CardBody,
-  Container, Row, Col
+  Container, Row, Col, Table
 } from 'reactstrap'
 
 import Calendar from '../../components/Calendar'
@@ -21,28 +21,6 @@ import Calendar from '../../components/Calendar'
 const LoadingComponent = ({ type, color }) => (
   <ReactLoading type={type} color={color} height={667} width={375} />
 );
-
-const Event = ({event, remove}) => {
-  return (
-    <li>
-      <div className="form-inline">
-        <Link href="/p/[id]" as={`/p/${event.id}`}>
-          <a style={{fontSize: 20}}>{event.title}</a>
-        </Link>
-        <Button onClick={remove}>
-          <FontAwesomeIcon icon={faTrash} className="mr-2" />
-        </Button>
-      </div>
-    </li>);
-}
-
-const EventsList = ({eventsObj, remove}) => {
-  // Map through the todos
-  const todoNode = eventsObj.map((event, remove) => {
-    return (<Event event={event} remove={remove}/>)
-  });
-  return (<ul>{todoNode}</ul>);
-}
 
 class Events extends React.Component{
   constructor(props){
@@ -105,7 +83,36 @@ class Events extends React.Component{
         <Container>
           <Card>
             <CardHeader><h3>Event Listing</h3></CardHeader>
-            <CardBody><EventsList eventsObj={this.state.shows} remove={this.handleRemove.bind(this)}/></CardBody>
+            <CardBody>
+              <Table>
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Date</th>
+                    <th>Club</th>
+                    <th>Location</th>
+                    <th>Event Title</th>
+                    <th>Event Desc</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {
+                    this.state.shows.map((value, index) => {
+                      return ( 
+                        <tr key={index}>
+                          <th scope="row">{index + 1}</th>
+                          <th>Date</th>
+                          <th>Club</th>
+                          <th>Location</th>
+                          <th>{ value["title"] }</th>
+                          <th>Event Desc</th>
+                        </tr>
+                      )
+                    })
+                  }
+                </tbody>
+              </Table>
+            </CardBody>
           </Card>
           <br />
           <Calendar />
@@ -116,3 +123,30 @@ class Events extends React.Component{
   }
 }
 export default withAuth(Events);
+
+
+/*
+Uses Hooks, cool to see it works, but not applicable when already grabbing data with api call
+
+const Event = ({event, remove}) => {
+  return (
+    <li>
+      <div className="form-inline">
+        <Link href="/p/[id]" as={`/p/${event.id}`}>
+          <a style={{fontSize: 20}}>{event.title}</a>
+        </Link>
+        <Button onClick={remove}>
+          <FontAwesomeIcon icon={faTrash} className="mr-2" />
+        </Button>
+      </div>
+    </li>);
+}
+
+const EventsList = ({eventsObj, remove}) => {
+  // Map through the todos
+  const todoNode = eventsObj.map((event, remove) => {
+    return (<Event event={event} remove={remove}/>)
+  });
+  return (<ul>{todoNode}</ul>);
+}
+*/
