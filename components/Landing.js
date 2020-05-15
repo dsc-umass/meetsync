@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Link from "next/link";
 import { Container, Row, Col } from 'reactstrap'
 
 class Landing extends Component {

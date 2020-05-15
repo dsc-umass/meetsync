@@ -75,7 +75,7 @@ class Sidebar extends Component {
             <NavItem>
               <NavLink href="/dashboard/contact" style={{color: "inherit"}}>
                 <FontAwesomeIcon icon={faPaperPlane} className="mr-2" />
-                Support
+                Contact Us
               </NavLink>
             </NavItem>
  
