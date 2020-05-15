@@ -12,9 +12,9 @@ const Foot = props => {
 	return (
 		<div >
 			<Navbar className="fixed-bottom">
-                <Link href="https://github.com/dsc-umass/meetsync">
-                    <a className="text-muted"><FaGithub /> {VERSION}</a>
-                </Link>
+                <a href="https://github.com/dsc-umass/meetsync" target="_blank" className="text-muted">
+                    <FaGithub /> {VERSION}
+                </a>
             </Navbar>
 		</div>
 	);
