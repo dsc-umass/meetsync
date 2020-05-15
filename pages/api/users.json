@@ -1,0 +1,10 @@
+[   
+    {
+      "id": 0,
+      "name": "T S",
+      "school":"UMass Amherst",
+      "email": "ts@umass.edu",
+      "password": "timmy",
+      "clubs": ["DSC", "Mandarin", "Badminton"]
+    }
+  ]
