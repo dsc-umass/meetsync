@@ -1,6 +1,7 @@
 import React from 'react';
 import withAuth from '../../functions/withAuth';
 import DashboardLayout from '../../components/DashboardLayout';
+import { Card, CardHeader } from 'reactstrap'
 
 class Contact extends React.Component{
   constructor(props){
@@ -14,7 +15,11 @@ class Contact extends React.Component{
   render() {
     return (
       <DashboardLayout>
-        <h1>Contact</h1>
+        <h1>Contact Us</h1>
+        <Card>
+          <CardHeader>EMAIL: dsc@umass.com</CardHeader>
+          <CardHeader>or call Abhinav?</CardHeader>
+        </Card>
       </DashboardLayout>
     );
   }
