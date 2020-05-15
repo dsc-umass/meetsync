@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../components/layout";
+import Layout from "../components/MainLayout";
 import { Container, Row, Col } from 'reactstrap';
 import Link from "next/link";
 import { auth, firebase } from '../components/Firebase/firebase'

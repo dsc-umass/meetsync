@@ -11,7 +11,7 @@ const Foot = props => {
 
 	return (
 		<div >
-			<Navbar fixed className="fixed-bottom">
+			<Navbar className="fixed-bottom">
                 <Link href="https://github.com/dsc-umass/meetsync">
                     <a className="text-muted"><FaGithub /> {VERSION}</a>
                 </Link>

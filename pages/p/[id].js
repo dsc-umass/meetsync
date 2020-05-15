@@ -1,6 +1,6 @@
 import React from "react"
 import { useRouter } from 'next/router'
-import Layout from '../../components/layout'
+import Layout from '../../components/MainLayout'
 import ReactLoading from 'react-loading';
 import axios from 'axios';
 

@@ -4,14 +4,16 @@ import React from 'react';
 import { auth, firebase } from '../components/Firebase/firebase'
 // Add this at the top of the page
 import withAuth from '../functions/withAuth';
-import Layout from '../components/layout';
+import Layout from '../components/MainLayout'
+import DashboardLayout from '../components/DashboardLayout';
 import router from 'next/router';
 import axios from 'axios';
 import ReactLoading from 'react-loading';
 import Link from 'next/link';
-import { Button } from 'reactstrap';
-//import { FasFaBan } from 'react-icons';
-import { MDBIcon } from 'mdbreact';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrash } from "@fortawesome/free-solid-svg-icons"
+import { Container, Row, Col, Button, Navbar, NavbarToggler, Collapse, Nav, NavItem, NavLink } from 'reactstrap'
+
 
 const LoadingComponent = ({ type, color }) => (
   <ReactLoading type={type} color={color} height={667} width={375} />
@@ -20,14 +22,14 @@ const LoadingComponent = ({ type, color }) => (
 const Event = ({event, remove}) => {
   return (
     <li>
-        <div className="form-inline">
-          <Link href="/p/[id]" as={`/p/${event.id}`}>
-            <a style={{fontSize: 20}}>{event.title}</a>
-          </Link>
-          <Button onClick={remove}>
-            <MDBIcon icon="trash" />
-          </Button>
-        </div>
+      <div className="form-inline">
+        <Link href="/p/[id]" as={`/p/${event.id}`}>
+          <a style={{fontSize: 20}}>{event.title}</a>
+        </Link>
+        <Button onClick={remove}>
+          <FontAwesomeIcon icon={faTrash} className="mr-2" />
+        </Button>
+      </div>
     </li>);
 }
 
@@ -74,17 +76,6 @@ class Dashboard extends React.Component{
         this.setState({data: remainder});      
       })
   }
-  
-
-  handleLogout = () => {
-    auth.signOut().then(function () {
-        alert('Logout successful');
-    }).catch(function (error) {
-        alert('OOps something went wrong check your console');
-        console.log(err);
-    });
-    router.push('/');
-  }
 
   createNewEvent = () => {
     router.push('/create_event');
@@ -106,24 +97,17 @@ class Dashboard extends React.Component{
       </Layout>
     )}
     return (
-      <Layout>
-        <section>
-          <div className="container">
-            <h1 className="text-center">Dashboard</h1>
-            <div className="row">
-              <div className="col">
-                <EventsList eventsObj={this.state.shows} remove={this.handleRemove.bind(this)}/>
-              </div>
-              <div className="col">
-                <Button color="primary" onClick={this.createNewEvent}>Create New Event</Button>{' '}
-              </div>
-              
-            </div>
-            <button onClick={this.handleLogout}>Logout</button>
-          </div>
-        </section>
-        
-      </Layout>
+      <DashboardLayout>
+        <h1>Dashboard</h1>
+        <Row>
+          <Col>
+            <EventsList eventsObj={this.state.shows} remove={this.handleRemove.bind(this)}/>
+          </Col>
+          <Col>
+            <Button color="primary" onClick={this.createNewEvent}>Create New Event</Button>{' '}
+          </Col>
+        </Row>
+      </DashboardLayout>
     );
   }
 }

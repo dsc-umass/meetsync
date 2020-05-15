@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../components/layout";
+import Layout from "../components/MainLayout";
 
 export default class CreateEvent extends React.Component {
 	render() {
