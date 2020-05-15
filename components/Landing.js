@@ -11,7 +11,7 @@ class Landing extends Component {
           width: "200vh",
           display: "flex",
           alignItems: "center",
-          background: "url('https://wallpaperaccess.com/full/374174.jpg')",
+          background: "url('https://images.ctfassets.net/p24lh3qexxeo/6pVwdeqsPhWgXTQ8jbsHnQ/33081906e5b4af1e8396a05a1a95b193/home_hero.svg')",
           /* Create the parallax scrolling effect */
           backgroundAttachment: "fixed",
           backgroundPosition: "center",
