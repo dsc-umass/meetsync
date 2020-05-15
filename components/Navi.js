@@ -29,7 +29,7 @@ const Navi = props => {
 							<NavLink href="/login">Login</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink href="/dashboard">Dashboard</NavLink>
+							<NavLink href="/dashboard/dashboard">Dashboard</NavLink>
 						</NavItem>
 					</Nav>
 				</Collapse>
