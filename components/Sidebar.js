@@ -55,25 +55,25 @@ class Sidebar extends Component {
         <div className="side-menu" style={{ fontSize: "20px"}}>      
           <Nav vertical>
             <NavItem>
-              <NavLink href="/profile" style={{color: "inherit"}}>
+              <NavLink href="/dashboard/profile" style={{color: "inherit"}}>
                 <FontAwesomeIcon icon={faBriefcase} className="mr-2" />
                 Profile
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/dashboard" style={{color: "inherit"}}>
+              <NavLink href="/dashboard/dashboard" style={{color: "inherit"}}>
                 <FontAwesomeIcon icon={faImage} className="mr-2" />
                 Dashboard
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/events" style={{color: "inherit"}}>
+              <NavLink href="/dashboard/events" style={{color: "inherit"}}>
                 <FontAwesomeIcon icon={faImage} className="mr-2" />
                 Events
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/contact" style={{color: "inherit"}}>
+              <NavLink href="/dashboard/contact" style={{color: "inherit"}}>
                 <FontAwesomeIcon icon={faPaperPlane} className="mr-2" />
                 Support
               </NavLink>

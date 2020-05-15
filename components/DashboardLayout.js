@@ -20,7 +20,7 @@ export default function DashboardLayout(props) {
           <Sidebar username="T S"/>
         </Col>
         <Col xs="10">
-          {props.children}}
+          {props.children}
         </Col>
       </div>
 		</MainLayout>

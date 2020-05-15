@@ -1,11 +1,10 @@
 // pages/dashboard.js
 import React from 'react';
 
-import { auth, firebase } from '../components/Firebase/firebase'
 // Add this at the top of the page
-import withAuth from '../functions/withAuth';
-import Layout from '../components/MainLayout'
-import DashboardLayout from '../components/DashboardLayout';
+import withAuth from '../../functions/withAuth';
+import Layout from '../../components/MainLayout'
+import DashboardLayout from '../../components/DashboardLayout';
 import router from 'next/router';
 import axios from 'axios';
 import ReactLoading from 'react-loading';
