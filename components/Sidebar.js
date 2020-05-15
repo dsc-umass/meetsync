@@ -1,18 +1,15 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faHome,
-  faBriefcase,
-  faPaperPlane,
-  faQuestion,
-  faImage,
-  faCopy,
+  faUser,
+  faColumns,
+  faCalendar,
+  faPlusCircle,
+  faIdCard
 } from "@fortawesome/free-solid-svg-icons";
 import { NavItem, NavLink, Nav, Button } from "reactstrap";
 import classNames from "classnames";
 import withAuth from '../functions/withAuth';
-
-
 
 const signOutStyling = {
     position: "absolute",
@@ -56,25 +53,31 @@ class Sidebar extends Component {
           <Nav vertical>
             <NavItem>
               <NavLink href="/dashboard/profile" style={{color: "inherit"}}>
-                <FontAwesomeIcon icon={faBriefcase} className="mr-2" />
+                <FontAwesomeIcon icon={faUser} className="mr-2" />
                 Profile
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="/dashboard/dashboard" style={{color: "inherit"}}>
-                <FontAwesomeIcon icon={faImage} className="mr-2" />
+                <FontAwesomeIcon icon={faColumns} className="mr-2" />
                 Dashboard
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="/dashboard/events" style={{color: "inherit"}}>
-                <FontAwesomeIcon icon={faImage} className="mr-2" />
+                <FontAwesomeIcon icon={faCalendar} className="mr-2" />
                 Events
               </NavLink>
             </NavItem>
             <NavItem>
+              <NavLink href="/dashboard/create_event" style={{color: "inherit"}}>
+                <FontAwesomeIcon icon={faPlusCircle} className="mr-2" />
+                Create Event
+              </NavLink>
+            </NavItem>
+            <NavItem>
               <NavLink href="/dashboard/contact" style={{color: "inherit"}}>
-                <FontAwesomeIcon icon={faPaperPlane} className="mr-2" />
+                <FontAwesomeIcon icon={faIdCard} className="mr-2" />
                 Contact Us
               </NavLink>
             </NavItem>

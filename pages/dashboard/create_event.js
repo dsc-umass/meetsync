@@ -7,7 +7,7 @@ import {
   Form, FormGroup, Label, Input
 } from 'reactstrap';
 
-class Profile extends React.Component{
+class CreateEvent extends React.Component{
   constructor(props){
     // Pass props to parent class
     super(props);
@@ -19,7 +19,7 @@ class Profile extends React.Component{
   render() {
     return (
       <DashboardLayout>
-        <h1>Profile</h1>
+        <h1>Create Event</h1>
         <Card>
           <CardHeader color="primary">
             <h3>Edit Profile</h3>
@@ -55,4 +55,4 @@ class Profile extends React.Component{
     );
   }
 }
-export default withAuth(Profile);
+export default withAuth(CreateEvent);
