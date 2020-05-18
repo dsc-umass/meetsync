@@ -1,7 +1,0 @@
-#!/bin/bash
-
-# DockerHub Auto Build script
-# Push the newly generated image tagged as the git shorthash
-SHORTHASH="$(git rev-parse --short HEAD)"
-docker tag $IMAGE_NAME $DOCKER_REPO:$SHORTHASH
-docker push $DOCKER_REPO:$SHORTHASH
