@@ -1,24 +1,71 @@
-# README
+# Meetsync
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Getting Started
 
-Things you may want to cover:
+### Prerequisites
 
-* Ruby version
+Since the applciation has been containerized through docker-compose, you would need docker-compose.
 
-* System dependencies
+### Installing & Running the Containers
 
-* Configuration
+To build the container(this is a one time build):
 
-* Database creation
+```
+sudo docker-compose build
+```
 
-* Database initialization
+To run the container (everytime you want to start the application):
 
-* How to run the test suite
+```
+sudo docker-compose up
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+You can press ctrl/command + C on the terminal to stop the container.
 
-* Deployment instructions
+### Accessing the Rails Container
 
-* ...
+To access the Rails Container(make sure the containers are already running):
+
+```
+sudo bash docker_shell.sh
+```
+If you want to access the rails console, then run the following command after the previous one:
+
+```
+rails c
+```
+
+### Accessing the Postgres Container
+
+To access the Postgres Container(make sure the containers are already running):
+
+```
+sudo bash db_shell.sh
+```
+
+Then type:
+
+```
+psql project_matching_development projectmatch projectmatchpass
+```
+
+### Common Errors & FAQ
+
+In case of a database not found or database not created error:
+
+Access the Rails Container and run:
+
+```
+cd docker
+
+bash db_setup.sh
+```
+
+If you want to reset the container and want to rebuild it, run:
+
+```
+sudo docker-compose down
+```
+
+and then rebuild it with docker-compose build
+
