@@ -1,0 +1,1 @@
+docker exec -it meetsync_postgres_1 
