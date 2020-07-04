@@ -50,7 +50,7 @@ sudo bash db_shell.sh
 Then type:
 
 ```
-psql project_matching_development projectmatch projectmatchpass
+psql meetsync_development meetsync meetsyncpass
 ```
 
 ### Common Errors & FAQ
