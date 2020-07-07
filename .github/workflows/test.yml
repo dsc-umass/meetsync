@@ -1,0 +1,25 @@
+name: Ruby Tests
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  test:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build the containers
+      run: docker-compose up -d
+    - name: Check running containers
+      run: docker ps -a
+    - name: Create database
+      run: docker exec meetsync_rails_1 bundle exec rake db:create
+    - name: Migrate Database
+      run: docker exec meetsync_rails_1 bundle exec rake db:migrate
+    - name: Run tests
+      run: docker exec meetsync_rails_1 bundle exec rake test
